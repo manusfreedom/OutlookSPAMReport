@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="OutlookSPAMReport" GeneratedClassName="appSettings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SpamTo" Type="System.String" Scope="User">
+      <Value Profile="(Default)">spamreport@mydomain.com</Value>
+    </Setting>
+    <Setting Name="HamTo" Type="System.String" Scope="User">
+      <Value Profile="(Default)">hamreport@mydomain.com</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

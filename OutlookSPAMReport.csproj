@@ -222,6 +222,7 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>appSettings.Designer.cs</LastGenOutput>
     </None>
+    <None Include="README.md" />
     <None Include="ThisAddIn.Designer.xml">
       <DependentUpon>ThisAddIn.cs</DependentUpon>
     </None>

@@ -115,6 +115,24 @@ namespace OutlookSPAMReport {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Do you want report ham?.
+        /// </summary>
+        public static string MessageBoxConfirmReportHam {
+            get {
+                return ResourceManager.GetString("MessageBoxConfirmReportHam", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Do you want report spam?.
+        /// </summary>
+        public static string MessageBoxConfirmReportSpam {
+            get {
+                return ResourceManager.GetString("MessageBoxConfirmReportSpam", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to OK.
         /// </summary>
         public static string okText {

@@ -38,41 +38,41 @@
             // 
             // textBoxSpamTo
             // 
-            this.textBoxSpamTo.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::OutlookSPAMReport.appSettings.Default, "SpamTo", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.textBoxSpamTo.Location = new System.Drawing.Point(92, 12);
+            this.textBoxSpamTo.DataBindings.Add(new System.Windows.Forms.Binding("Text", appSettings.Default, "SpamTo", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.textBoxSpamTo.Location = new System.Drawing.Point(99, 12);
             this.textBoxSpamTo.Name = "textBoxSpamTo";
             this.textBoxSpamTo.Size = new System.Drawing.Size(257, 20);
             this.textBoxSpamTo.TabIndex = 0;
-            this.textBoxSpamTo.Text = global::OutlookSPAMReport.appSettings.Default.SpamTo;
+            this.textBoxSpamTo.Text = appSettings.Default.SpamTo;
             // 
             // textBoxHamTo
             // 
-            this.textBoxHamTo.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::OutlookSPAMReport.appSettings.Default, "HamTo", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.textBoxHamTo.Location = new System.Drawing.Point(92, 38);
+            this.textBoxHamTo.DataBindings.Add(new System.Windows.Forms.Binding("Text", appSettings.Default, "HamTo", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.textBoxHamTo.Location = new System.Drawing.Point(99, 38);
             this.textBoxHamTo.Name = "textBoxHamTo";
             this.textBoxHamTo.Size = new System.Drawing.Size(257, 20);
             this.textBoxHamTo.TabIndex = 1;
-            this.textBoxHamTo.Text = global::OutlookSPAMReport.appSettings.Default.HamTo;
+            this.textBoxHamTo.Text = appSettings.Default.HamTo;
             // 
             // buttonSettingsOK
             // 
             this.buttonSettingsOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.buttonSettingsOK.Location = new System.Drawing.Point(274, 64);
+            this.buttonSettingsOK.Location = new System.Drawing.Point(281, 64);
             this.buttonSettingsOK.Name = "buttonSettingsOK";
             this.buttonSettingsOK.Size = new System.Drawing.Size(75, 23);
             this.buttonSettingsOK.TabIndex = 2;
-            this.buttonSettingsOK.Text = AllResources.okText;
+            this.buttonSettingsOK.Text = global::OutlookSPAMReport.AllResources.okText;
             this.buttonSettingsOK.UseVisualStyleBackColor = true;
             this.buttonSettingsOK.Click += new System.EventHandler(this.buttonSettingsOK_Click);
             // 
             // buttonSettingsCancel
             // 
             this.buttonSettingsCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonSettingsCancel.Location = new System.Drawing.Point(193, 64);
+            this.buttonSettingsCancel.Location = new System.Drawing.Point(200, 64);
             this.buttonSettingsCancel.Name = "buttonSettingsCancel";
             this.buttonSettingsCancel.Size = new System.Drawing.Size(75, 23);
             this.buttonSettingsCancel.TabIndex = 3;
-            this.buttonSettingsCancel.Text = AllResources.cancelText;
+            this.buttonSettingsCancel.Text = global::OutlookSPAMReport.AllResources.cancelText;
             this.buttonSettingsCancel.UseVisualStyleBackColor = true;
             // 
             // labelSpamTo
@@ -82,7 +82,7 @@
             this.labelSpamTo.Name = "labelSpamTo";
             this.labelSpamTo.Size = new System.Drawing.Size(82, 13);
             this.labelSpamTo.TabIndex = 4;
-            this.labelSpamTo.Text = AllResources.labelSpamTo;
+            this.labelSpamTo.Text = global::OutlookSPAMReport.AllResources.labelSpamTo;
             // 
             // labelHamTo
             // 
@@ -91,7 +91,7 @@
             this.labelHamTo.Name = "labelHamTo";
             this.labelHamTo.Size = new System.Drawing.Size(77, 13);
             this.labelHamTo.TabIndex = 5;
-            this.labelHamTo.Text = AllResources.labelHamTo;
+            this.labelHamTo.Text = global::OutlookSPAMReport.AllResources.labelHamTo;
             // 
             // SettingsForm
             // 
@@ -99,7 +99,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.buttonSettingsCancel;
-            this.ClientSize = new System.Drawing.Size(361, 97);
+            this.ClientSize = new System.Drawing.Size(368, 97);
             this.Controls.Add(this.labelHamTo);
             this.Controls.Add(this.labelSpamTo);
             this.Controls.Add(this.buttonSettingsCancel);
@@ -108,7 +108,7 @@
             this.Controls.Add(this.textBoxSpamTo);
             this.Name = "SettingsForm";
             this.ShowIcon = false;
-            this.Text = "Spam Report Settings";
+            this.Text = global::OutlookSPAMReport.AllResources.settingsFormTitle;
             this.ResumeLayout(false);
             this.PerformLayout();
 

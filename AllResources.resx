@@ -135,6 +135,12 @@
   <data name="labelSpamTo" xml:space="preserve">
     <value>Report spam to:</value>
   </data>
+  <data name="MessageBoxConfirmReportHam" xml:space="preserve">
+    <value>Do you want report ham?</value>
+  </data>
+  <data name="MessageBoxConfirmReportSpam" xml:space="preserve">
+    <value>Do you want report spam?</value>
+  </data>
   <data name="okText" xml:space="preserve">
     <value>OK</value>
   </data>

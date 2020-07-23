@@ -15,7 +15,12 @@ namespace OutlookSPAMReport
     {
         private void ThisAddIn_Startup(object sender, System.EventArgs e)
         {
-
+            if (appSettings.Default.UpgradeRequired)
+            {
+                appSettings.Default.Upgrade();
+                appSettings.Default.UpgradeRequired = false;
+                appSettings.Default.Save();
+            }
         }
 
         private void ThisAddIn_Shutdown(object sender, System.EventArgs e)
@@ -47,7 +52,7 @@ namespace OutlookSPAMReport
         {
             Outlook.Application outlookApp = this.Application;
 
-            DialogResult result = MessageBox.Show("Do you want report spam?", "Spam Reporter", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult result = MessageBox.Show(global::OutlookSPAMReport.AllResources.MessageBoxConfirmReportSpam, "Spam Reporter", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.No)
             {
                 return;
@@ -104,7 +109,7 @@ namespace OutlookSPAMReport
         {
             Outlook.Application outlookApp = this.Application;
 
-            DialogResult result = MessageBox.Show("Do you want report ham?", "Spam Reporter", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult result = MessageBox.Show(global::OutlookSPAMReport.AllResources.MessageBoxConfirmReportHam, "Spam Reporter", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.No)
             {
                 return;

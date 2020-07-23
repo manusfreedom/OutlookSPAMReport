@@ -19,6 +19,8 @@ namespace OutlookSPAMReport
 
         private void buttonSettingsOK_Click(object sender, EventArgs e)
         {
+            appSettings.Default["SpamTo"] = this.textBoxSpamTo.Text;
+            appSettings.Default["HamTo"] = this.textBoxHamTo.Text;
             appSettings.Default.Save();
         }
     }

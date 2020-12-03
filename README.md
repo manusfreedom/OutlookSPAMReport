@@ -8,19 +8,15 @@ Outlook VSTO Add-ins to report spam and ham.
 
 What things you need to install the software and how to install them
 
-```
-Visual Studio 201x
-[Visual Studio 2010 Tools for Office Runtime](https://www.microsoft.com/en-us/download/details.aspx?id=56961)
-Outlook 201x or 365
-WinRAR (to build SFX)
-```
+* Visual Studio 201x
+* [Visual Studio 2010 Tools for Office Runtime](https://www.microsoft.com/en-us/download/details.aspx?id=56961)
+* Outlook 201x or 365
+* WinRAR (to build SFX)
 
 ### Prerequisites to use
 
-```
-Outlook 201x or 365
-[Visual Studio 2010 Tools for Office Runtime](https://www.microsoft.com/en-us/download/details.aspx?id=56961)
-```
+* Outlook 201x or 365
+* [Visual Studio 2010 Tools for Office Runtime](https://www.microsoft.com/en-us/download/details.aspx?id=56961)
 
 ### Install
 
